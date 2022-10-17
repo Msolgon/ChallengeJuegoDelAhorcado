@@ -1,0 +1,327 @@
+body
+{
+   background: #F3F5FC;
+}
+
+header
+{
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-logo
+{
+    width: 10%;
+    height: 80%;
+}
+
+.logo
+{
+    height: 100%;
+    margin-top: 10px;
+    padding-left: 100px;
+}
+
+.inicio
+{
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.botones-home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton
+{
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-iniciar
+{
+    font-size: 16px;
+    padding: 25px 80px;
+    color: #fff;
+    background: #0a3871;
+    border: none;
+    margin: 15px;
+    width: 250px;
+    transition: all 400ms;
+}
+
+.btn-iniciar:hover
+{
+    background: #072b57;
+    transform: scale(1.3);
+}  
+
+.btn-palabra
+{
+    font-size: 14px;
+    padding: 15px 25px;
+    color: #0a3871;
+    background: #fff;
+    border: 1px solid #0a3871;
+    margin: 15px;
+    width: 250px;
+    transition: all 400ms;
+}
+
+.btn-palabra:hover
+{
+    transform: scale(1.3);
+    background:  #ddd;
+}
+
+.ingresar-palabra
+{
+    height: 80%;
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.palabra-nueva
+{
+    margin: 0px auto;
+    width: 80%;
+}
+
+.text-input
+{
+    height: 100px;
+    width: 100%;
+    background: local;
+    border: none;
+    padding-top: 20px;
+}
+
+.text-input::placeholder
+{
+    color: #0A3871;
+}
+
+.seccion-botones
+{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.inputTexto 
+{
+    height: 100%;
+    font-size: 14px;
+    margin: auto 0px;
+    padding-top: 20px;
+}
+
+.botones-div
+{
+    display: flex;
+}
+
+.btn-guardar
+{
+    padding: 20px 50px;
+    margin-right: 15px;
+    border-radius: 20px;
+    border: none;
+    background: #0a3871;
+    color: #fff;
+    width: 250px;
+    padding-top: 20px;
+    transition: all 400ms;
+}
+
+.btn-guardar:hover
+{
+    transform: scale(1.3);
+    background: #072b57;
+}
+
+.btn-cancelar
+{
+    padding: 20px 50px;
+    border: 1px solid #0a3871;
+    border-radius: 20px;
+    color: #0a3871;
+    width: 250px;
+    transition: all 400ms;
+}
+
+.btn-cancelar:hover
+{
+    transform: scale(1.3);
+    background:  #ddd;
+}
+
+.tablero
+{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.canvas
+{
+    max-width: 800px;
+    height: 65%;
+    margin: 4rem auto;
+}
+
+.horca
+{
+    width: 100%;
+    height: 100%;
+}
+
+.botones-div-canvas
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-nuevo-juego
+{
+    padding: 20px 50px;
+    margin-right: 15px;
+    border-radius: 20px;
+    border: none;
+    background: #0a3871;
+    color: #fff;
+    width: 250px;
+    transition: all 400ms;
+}
+
+.btn-nuevo-juego:hover
+{
+    transform: scale(1.3);
+    background: #072b57;
+}
+
+.btn-desistir
+{
+    padding: 20px 50px;
+    border: 1px solid #0a3871;
+    border-radius: 20px;
+    color: #0a3871;
+    width: 250px;
+    transition: all 400ms;
+}
+
+.btn-desistir:hover
+{
+    transform: scale(1.3);
+    background:  #ddd;
+}
+
+footer
+{
+    display: block;
+    text-align: center;
+    margin: 5%;
+    margin-bottom: 0;
+    color: #0A3871;
+}
+
+.copy
+{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .contenedor-logo
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-iniciar
+    {
+        padding: 20px 60px;
+    }
+
+
+    .boton
+    {
+        font-size: 13px;
+    }
+
+    .btn-palabra
+    {
+        padding: 15px 15px;
+    }
+  
+    .seccion-botones
+    {
+        width: 100%;
+    }
+
+    .botones-div
+    {
+        flex-direction: column;
+    }
+
+    .btn-guardar
+    {
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 10px 20px;
+    }
+
+    .btn-cancelar
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .canvas
+    {
+        max-width: 300px;
+        padding-top: 100px;
+        margin: auto;
+    }
+
+    .botones-div-canvas
+    {
+        display: block;
+        flex-direction: column;
+    }
+}
+
+
+
+
